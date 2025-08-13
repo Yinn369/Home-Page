@@ -4,6 +4,33 @@
   "itemHide": false,
   "group": [
     {
+      "name": "Panel",
+      "icon": "uim:layer-group",
+      "items": [
+        {
+          "title": "1Panel",
+          "description": "",
+          "icon": "./static/img/icon/1panel.png",
+          "url": "https://mb.yinn.eu.org",
+          "lanUrl": "http://192.168.101.100:60780"
+        },
+        {
+          "title": "EasyTier",
+          "description": "",
+          "icon": "https://easytier.cn/easytier.png",
+          "url": "https://easytier.cn/web",
+          "lanUrl": ""
+        },
+        {
+          "title": "Clash-Dashboard",
+          "description": "",
+          "icon": "./static/img/icon/clash.ico",
+          "url": "http://192.168.101.100:1234",
+          "lanUrl": "http://192.168.101.100:1234"
+        }
+      ]
+    },
+    {
       "name": "APP",
       "icon": "garden:app-26",
       "items": [
@@ -11,22 +38,43 @@
           "title": "YinnBlog",
           "description": "",
           "icon": "./static/img/icon/yinn.svg",
-          "url": "//yinn.top",
+          "url": "http://yinn.top",
           "lanUrl": ""
         },
         {
-          "title": "sun-panel",
+          "title": "BitComet",
           "description": "",
-          "icon": "https://doc.sun-panel.top/favicon.ico",
-          "url": "https://doc.sun-panel.top/",
-          "lanUrl": ""
+          "icon": "streamline-flex-color:download-tray-flat",
+          "url": "https://down.yinn.eu.org",
+          "lanUrl": "http://192.168.101.100:5423"
         },
         {
-          "title": "List",
+          "title": "OpenList",
           "description": "",
           "icon": "./static/img/icon/oplist.png",
+          "url": "https://alist.yinn.eu.org",
+          "lanUrl": "http://192.168.101.100:5699"
+        },
+        {
+          "title": "TaoSync",
+          "description": "",
+          "icon": "iconoir:cloud-desync",
+          "url": "https://tao.yinn.eu.org",
+          "lanUrl": "http://192.168.101.100:5023"
+        },
+        {
+          "title": "Cloud-Saver",
+          "description": "",
+          "icon": "./static/img/icon/saver.ico",
+          "url": "https://saver.yinn.eu.org",
+          "lanUrl": "http://192.168.101.100:5088"
+        },
+        {
+          "title": "DDNS-GO",
+          "description": "",
+          "icon": "./static/img/icon/ddns-go.ico",
           "url": "",
-          "lanUrl": ""
+          "lanUrl": "http://192.168.101.100:9876"
         }
       ]
     },
@@ -38,15 +86,15 @@
           "title": "Home-Assistant",
           "description": "",
           "icon": "./static/img/icon/ha.ico",
-          "url": "//baidu.com",
-          "lanUrl": ""
+          "url": "",
+          "lanUrl": "http://192.168.101.100:8123"
         },
         {
           "title": "n8n",
           "description": "",
           "icon": "./static/img/icon/n8n.ico",
           "url": "",
-          "lanUrl": "//baidu.com"
+          "lanUrl": "http://192.168.101.100:15678"
         }
       ]
     }
