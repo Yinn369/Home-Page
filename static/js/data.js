@@ -1,6 +1,6 @@
 // 配置常量
 const CONFIG = {
-  CONFIG_PATH: "../config.json",
+  CONFIG_PATH: "./config.json",
   FETCH_TIMEOUTS: {
     LAN: 100,
     WAN: 1000,
