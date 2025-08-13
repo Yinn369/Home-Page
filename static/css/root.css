@@ -1,0 +1,156 @@
+/* 全局主题变量 */
+:root {
+  /* 基础颜色 */
+  --color-primary: #41d1ff; /* 主要强调色 - 蓝色 */
+  --color-secondary: #bd34fe; /* 次要强调色 - 紫色 */
+  --color-accent: #e0321b; /* 点缀色 - 红色 */
+  --color-text-primary: #000000; /* 主要文本颜色 - 黑色 */
+  --color-text-secondary: #494949; /* 次要文本颜色 - 灰色 */
+  --color-text-light: #ffffff; /* 浅色文本颜色 - 白色 */
+
+  /* 移除重复的渐变定义 */
+  --gradient: linear-gradient(
+    120deg,
+    var(--color-secondary),
+    var(--color-accent) 30%,
+    var(--color-primary) 60%
+  ); /* 默认渐变效果 */
+
+  /* 背景相关配置 */
+  --bg-opacity: 0.42; /* 背景透明度 */
+  --bg-blur-card: 0.625rem; /* 卡片背景模糊值 */
+  --bg-blur-back: 0; /* 整体背景模糊值 */
+  --bg-overlay: rgba(0, 0, 0, 0.3); /* 背景遮罩层颜色 */
+
+  /* 卡片样式配置 */
+  --card-bg: rgba(249, 250, 251, var(--bg-opacity)); /* 卡片背景色 */
+  --card-bg-offline: rgba(249, 250, 251, var(--bg-opacity)); /* 卡片背景色 */
+  --card-hover: rgba(244, 245, 246, 0.8); /* 卡片悬浮时背景色 */
+  --card-radius: 1rem; /* 卡片圆角大小 */
+  --card-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1); /* 卡片阴影效果 */
+  --card_filter: 0.625rem; /* 卡片模糊滤镜值 */
+
+  /* 动画配置 */
+  --transition-normal: 0.2s ease; /* 过渡动画默认时间和效果 */
+
+  /* 页脚配置 */
+  --footer_text_color: rgb(203 213 225); /* 页脚文字颜色 */
+}
+
+/* 亮色主题变量 */
+html[data-theme="light"] {
+  --main-bg: linear-gradient(50deg, #a2d1ff, #ffffff); /* 亮色主题背景渐变 */
+  --main-text: var(--color-text-primary); /* 亮色主题主文本色 */
+  --item-bg: var(--card-bg); /* 亮色主题卡片背景 */
+  --item-hover: var(--card-hover); /* 亮色主题卡片悬浮色 */
+  --item-title: var(--color-text-primary); /* 亮色主题标题文本色 */
+  --item-desc: var(--color-text-secondary); /* 亮色主题描述文本色 */
+  --footer-text: #222222; /* 亮色主题页脚文本色 */
+  --icon-fill: var(--color-text-primary); /* 亮色主题图标填充色 */
+  --blur-card: 0px; /* 亮色主题卡片模糊值 */
+  --blur-back: 0px; /* 亮色主题背景模糊值 */
+  --card-bg-offline: rgba(
+    240,
+    180,
+    180,
+    var(--bg-opacity)
+  ); /* 离线卡片背景色 */
+}
+
+/* 暗色主题变量 */
+html[data-theme="dark"] {
+  --main-bg: linear-gradient(50deg, #4b267a, #160016); /* 暗色主题背景图片 */
+  --main-text: var(--color-text-light); /* 暗色主题主文本色 */
+  --item-bg: rgba(42, 42, 42, var(--bg-opacity)); /* 暗色主题卡片背景 */
+  --item-hover: rgba(51, 51, 51, var(--bg-opacity)); /* 暗色主题卡片悬浮色 */
+  --item-title: var(--color-text-light); /* 暗色主题标题文本色 */
+  --item-desc: var(--color-text-light); /* 暗色主题描述文本色 */
+  --footer-text: rgb(203, 213, 225); /* 暗色主题页脚文本色 */
+  --icon-fill: var(--color-text-light); /* 暗色主题图标填充色 */
+  --blur-card: var(--bg-blur-card); /* 暗色主题卡片模糊值 */
+  --blur-back: var(--bg-blur-back); /* 暗色主题背景模糊值 */
+  --card-bg-offline: rgba(120, 90, 90, var(--bg-opacity)); /* 离线卡片背景色 */
+}
+
+/* 图片背景主题 */
+html[data-theme="image"] {
+  --main-bg: url(https://t.mwm.moe/fj);
+  --main-text: var(--color-text-light);
+  --item-bg: rgba(42, 42, 42, var(--bg-opacity));
+  --item-hover: rgba(51, 51, 51, var(--bg-opacity));
+  --item-title: var(--color-text-light);
+  --item-desc: var(--color-text-light);
+  --footer-text: rgb(203, 213, 225);
+  --icon-fill: var(--color-text-light);
+  --blur-card: var(--bg-blur-card);
+  --blur-back: var(--bg-blur-back);
+  --card-bg-offline: rgba(120, 90, 90, var(--bg-opacity)); /* 离线卡片背景色 */
+}
+
+/* 应用主题变量 */
+body {
+  background: var(--main-bg);
+  color: var(--main-text);
+}
+
+.projectItem {
+  background-color: var(--item-bg);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  transition: all var(--transition-normal);
+}
+
+.projectItem:hover {
+  background-color: var(--item-hover);
+}
+
+.projectItemLeft h1 {
+  color: var(--item-title);
+}
+
+.projectItemLeft p {
+  color: var(--item-desc);
+}
+
+footer {
+  color: var(--footer-text);
+}
+
+.iconify {
+  fill: var(--icon-fill);
+}
+
+/* 响应式布局 */
+@media (max-width: 1200px) {
+  :root {
+    --card-width: calc(25% - 1.25rem);
+    --card-margin: 0.625rem;
+  }
+}
+
+@media (max-width: 900px) {
+  :root {
+    --card-width: calc(33% - 1.25rem);
+    --card-margin: 0.625rem;
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    --card-width: calc(50% - 1.125rem);
+    --card-margin: 0.5625rem;
+  }
+}
+
+/* 应用响应式变量 */
+.projectItem,
+.itembox {
+  width: var(--card-width, calc(20% - 0.9375rem));
+  margin: var(--card-margin, 0.4375rem);
+}
+/* 应用响应式变量 */
+.projectItem,
+.itembox {
+  width: var(--card-width, calc(20% - 0.9375rem));
+  margin: var(--card-margin, 0.4375rem);
+}

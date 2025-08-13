@@ -1,0 +1,54 @@
+{
+  "title": "Yinx",
+  "_itemHide": "无法访问时隐藏",
+  "itemHide": false,
+  "group": [
+    {
+      "name": "APP",
+      "icon": "garden:app-26",
+      "items": [
+        {
+          "title": "YinnBlog",
+          "description": "",
+          "icon": "./static/img/icon/yinn.svg",
+          "url": "//yinn.top",
+          "lanUrl": ""
+        },
+        {
+          "title": "sun-panel",
+          "description": "",
+          "icon": "https://doc.sun-panel.top/favicon.ico",
+          "url": "https://doc.sun-panel.top/",
+          "lanUrl": ""
+        },
+        {
+          "title": "List",
+          "description": "",
+          "icon": "./static/img/icon/oplist.png",
+          "url": "",
+          "lanUrl": ""
+        }
+      ]
+    },
+    {
+      "name": "Automate",
+      "icon": "simple-icons:n8n",
+      "items": [
+        {
+          "title": "Home-Assistant",
+          "description": "",
+          "icon": "./static/img/icon/ha.ico",
+          "url": "//baidu.com",
+          "lanUrl": ""
+        },
+        {
+          "title": "n8n",
+          "description": "",
+          "icon": "./static/img/icon/n8n.ico",
+          "url": "",
+          "lanUrl": "//baidu.com"
+        }
+      ]
+    }
+  ]
+}
